@@ -89,5 +89,4 @@ void main()
 	lod0 = texture(Source, vTexCoord, floor_val).rgb;
 	lod1 = texture(Source, vTexCoord, ceil(edge)).rgb;
 	FragColor = vec4(mix(lod0, lod1, edge - floor_val),1.0);
-	
 }
