@@ -2,8 +2,10 @@
 
 /*
    TriggerExcited's MIPlateral.
-   Super fast bilateral with a very wide range of settings.
-   Changing the effect radius does not affect performance.
+   
+   MIPlateral is a super fast bilateral with a very wide range of settings.
+   Changing the effect radius or strength does not affect performance.
+   Makes use of Fabrice Neyret's mipmap edge detection technique.
 
    Copyright (c) 2022 TriggerExcited - triggerexcited@gmail.com
 
@@ -25,8 +27,6 @@
    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
    FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
    DEALINGS IN THE SOFTWARE.
-
-   It uses an implementation of Fabrice Neyret's mipmap edge detection.
 */
 
 #pragma parameter QUALITY "Blur Radius:" 2.0 0.0 10.0 1.0
